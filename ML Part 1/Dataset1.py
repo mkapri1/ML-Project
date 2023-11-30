@@ -31,16 +31,13 @@ def perform_classification(train_data, train_labels, test_data):
     test_predictions = svm_model.predict(test_data)
     return test_predictions
 
-# Loading data from text files for dataset 1
-train_data_1 = np.loadtxt('TrainData1.txt')  # Replace with your actual file name
-train_labels_1 = np.loadtxt('TrainLabel1.txt')  # Replace with your actual file name
-test_data_1 = np.loadtxt('TestData1.txt')  # Replace with your actual file name
+train_data_1 = np.loadtxt('TrainData1.txt') 
+train_labels_1 = np.loadtxt('TrainLabel1.txt') 
+test_data_1 = np.loadtxt('TestData1.txt')  
 
-# Performing classification for dataset 2 using Random Forest Classifier
 test_predictions_1 = perform_classification(train_data_1, train_labels_1, test_data_1)
 
-# Writing all predictions to a single file for dataset 2
-with open("dataset1_pred.txt", "w") as file:
+with open("BrienKapriClassification1_pred.txt", "w") as file:
     for prediction in test_predictions_1:
         file.write(f"{prediction}\n")
 

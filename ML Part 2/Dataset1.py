@@ -18,4 +18,4 @@ df[11].fillna(df[11].mean(), inplace=True)
 df[12].fillna(df[12].median(), inplace=True)
 df[13].fillna(df[13].mean(), inplace=True)
 
-df.to_csv('NewData1.txt', sep='\t', index = False)
+df.to_csv('BrienKapriMissingResult1.txt', sep='\t', index = False)

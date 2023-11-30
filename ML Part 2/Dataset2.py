@@ -11,4 +11,4 @@ knn_imputer = KNNImputer(n_neighbors=3)
 
 df1 = pd.DataFrame(knn_imputer.fit_transform(df1), columns=df1.columns)
 
-df1.to_csv('NewData2.txt', sep='\t', index = False)
+df1.to_csv('BrienKapriMissingResult2.txt', sep='\t', index = False)
